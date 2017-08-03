@@ -95,8 +95,8 @@ The code for calculating the accuracy of the model is located in the 12th cell o
 
 My final model results were:
 <!-- * training set accuracy of `` -->
-* validation set accuracy of `0.969` 
-* test set accuracy of `0.895`
+* validation set accuracy of `0.939` 
+* test set accuracy of `0.864`
 
 After just 10 epochs of training and a pretty disbalanced data-set these results seem great.
 
@@ -115,12 +115,15 @@ After finding a mistake in classification using 5 epocs I've upped the number to
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 0.99         			| Stop sign   									| 
-| 0.98     				| Speed Limit (60) 								|
+| 0.98     				| Speed Limit (50) 								|
 | 1.00					| Yield											|
-| 0.99	      			| No passing					 				|
+| 1.00	      			| No passing					 				|
 | 1.00				    | Priority Road      							|
 
-The images used for testing are very clear and exactly same size as the training set. As you can see accuracy is 100%. While test accuracy being 85.8%, we got lucky in this case with good images.
+The images used for testing are very clear and exactly same size as the training set. As you can see accuracy is 80%. While test accuracy being 85.8%. The model incorrectly classified 60km/h sign as 50km/h. At least it added a 1% confidence that it's 60 :) 
+
+Depending on the training luck the model sometimes actually correctly predicts all 5.
 
 I tried it on the bigger images from the internet with little luck, for that to work I'd need to add the processing to increase contrast and reduce the size.
 
+For future development this model could be improved by altering the training set and balancing it.
