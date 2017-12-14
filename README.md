@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
 ---
 
@@ -45,7 +45,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ![alt text][data]
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
 The code for this step is contained in the 4th code cell of the IPython notebook.
 
